@@ -1,18 +1,32 @@
+'use client'
+
+import { CardGallery } from '@/components/shared/card-gallery'
+import { DataDisplay } from '@/components/shared/data-display'
+import { DialogShowcase } from '@/components/shared/dialog-showcase'
+import Footer from '@/components/shared/footer'
+import { FormShowcase } from '@/components/shared/form-showcase'
 import Header from '@/components/shared/header'
 import Hero from '@/components/shared/hero'
-import Features from '@/components/shared/features'
-import Footer from '@/components/shared/footer'
+import { NavigationShowcase } from '@/components/shared/navigation-showcase'
+import { Newsletter } from '@/components/shared/newsletter'
+import { Pricing } from '@/components/shared/pricing'
+import { Testimonials } from '@/components/shared/testimonials'
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <main>
       <Header />
-      <main className="flex-grow">
-        <Hero />
-        <Features />
-      </main>
+      <Hero />
+      <CardGallery />
+      <FormShowcase />
+      <NavigationShowcase />
+      <DataDisplay />
+      <DialogShowcase />
+      <Pricing />
+      <Testimonials />
+      <Newsletter />
       <Footer />
-    </div>
+    </main>
   )
 }
 
