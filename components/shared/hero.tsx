@@ -11,7 +11,7 @@ export default function Hero() {
             </p>
             <Button size="lg" asChild>
                 <a
-                    href="https://github.com/yourusername/starter-nextjs"
+                    href="https://github.com/Marksu-u/starter-next"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
